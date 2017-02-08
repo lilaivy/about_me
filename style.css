@@ -1,0 +1,30 @@
+body{
+    font-family: Helvetica;
+    text-align: center;
+}
+
+h1{
+    color: #e06c40;
+    font-size: 48px;
+}
+
+h2{
+    padding-top: 25px;
+    color:#e06c40;
+    font-size: 35px;
+    padding-left: 18px;
+    
+}
+
+
+ol{
+    text-align: center;     
+    display: inline-block 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* add an li section, figure out how to center the items in an ordered list*/
