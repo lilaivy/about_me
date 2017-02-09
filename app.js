@@ -70,19 +70,23 @@
 
 
 
-/*
- var question4 = prompt('Ended a cross country road trip in Portland and never left.',"Yes or No").toLowerCase();
- if (question4 === 'yes' || question4 === 'y') {
-   alert("It's mostly true.  I had to return to NYC to tie up some loose ends first.");
-   console.log('User answer to question 4: ' + question4);
-   correct += 1;
- }
- else {
-   alert("Sort of. I had to return to NYC to tie up some loose ends first.");
-   console.log('User answer to question 4: ' + question4);
-   correct += 1;
+ function fourthFunction() {
+   var question4 = prompt('Ended a cross country road trip in Portland and never left.', 'Yes or No').toLowerCase();
+   if (question4 === 'yes' || question4 === 'y') {
+     alert('It\'s mostly true.  I had to return to NYC to tie up some loose ends first.');
+     console.log('User answer to question 4: ' + question4);
+     correct += 1;
+   }
+   else {
+     alert("Sort of. I had to return to NYC to tie up some loose ends first.");
+     console.log('User answer to question 4: ' + question4);
+     correct += 1;
+   }
  }
 
+
+
+/*
  var question5 = prompt("Once won a large sum of cash in a fierce game of BINGO.","Yes or No").toLowerCase();
  if (question5 === 'yes' || question5 === 'y') {
    alert("Damn straight!");
@@ -165,5 +169,6 @@
 firstFunction();
 secondFunction();
 thirdFunction();
+fourthFunction();
 
 */
