@@ -34,8 +34,6 @@
    }
  }
 
-
-
 //start game
 
 
@@ -67,9 +65,6 @@
    }
  }
 
-
-
-
  function fourthFunction() {
    var question4 = prompt('Ended a cross country road trip in Portland and never left.', 'Yes or No').toLowerCase();
    if (question4 === 'yes' || question4 === 'y') {
@@ -84,8 +79,6 @@
    }
  }
 
-
-
  function fifthFunction() {
    var question5 = prompt('Once won a large sum of cash in a fierce game of BINGO.', 'Yes or No').toLowerCase();
    if (question5 === 'yes' || question5 === 'y') {
@@ -99,40 +92,44 @@
    }
  }
 
-
-
-/*
  //congratulate user and initiate stage 2 of game
- confirm("CONGRATULATIONS! You're learning the A-Z's of Ivy. Click OK to up the anty!");
- confirm("You're almost Ivy's BFF...just answer a few more questions correctly and you will live happily ever after!");
+//  confirm("CONGRATULATIONS! You're learning the A-Z's of Ivy. Click OK to up the anty!");
+//  confirm("You're almost Ivy's BFF...just answer a few more questions correctly and you will live happily ever after!");
 
 
- var bingoMoney = 700;
- var count  = 0;
+ function sixthFunction() {
+   var bingoMoney = 700;
+   var count = 0;
 
- while(count < 4 && question6 != bingoMoney){
+   while (count < 4 && question6 != bingoMoney) {
   //figure out how to convert a string into a number and change to === instead of ==
-   var question6 = prompt('How much cash money did Ivy walk with in this epic game of Bingo');
-   count++;
+     var question6 = prompt('How much cash money did Ivy walk with in this epic game of Bingo');
+     count++;
 
-   if(question6 == bingoMoney){
-     alert('You got it! $700 big ones, sucka!');
-     console.log('User answer to question 6: ' + question6);
-     correct += 1;
+     //guessed right
+     if (question6 == bingoMoney) {
+       alert('You got it! $700 big ones, sucka!');
+       console.log('User answer to question 6: ' + question6);
+       correct += 1;
+       //guessed low
+     } else if (question6 < bingoMoney) {
+       alert(question6 + ' ?! Ivy knows when to hold \'em, fool!  Guess Higher!');
+       console.log('User answer to question6: ' + question6);
+       //guessed high
+     } else if (question6 > bingoMoney) {
+       alert(question6 + " ?! It's Bingo, not fantasy football. Guess Lower!");
+       console.log('User answer to question 6: ' + question6);
+       //out of guesses
+     }
    }
-   else if(question6 < bingoMoney){
-     alert(question6 + " ?! Ivy knows when to hold 'em, fool!  Guess Higher!");
-     console.log('User answer to question6: ' + question6);
-   }
-   else if(question6 > bingoMoney){
-     alert(question6 + " ?! It's Bingo, not fantasy football. Guess Lower!");
-     console.log('User answer to question 6: ' + question6);
-   }
+   alert('Let\'s move on to the final question!');
  }
 
- alert("This is not going well for you.  Let's move on to the final question!");
-
+/*
  var bingoNumbers = ['o44', 'i19', 'n31', 'g43'];
+ 
+ 
+ //THE REASON THE CODE BELOW WORKED IS BECAUSE YOU RESET THE SAME COUNT VARIABLE AS ABOVE. BUUUUT WE JUST WRAPPED IT INTO A FUNCTION AND MADE IT LOCAL TO THE FUNCTIONS SO THIS WON'T HAPPEN AGAIN
  count = 0;
 
  while(count < 6){
@@ -174,5 +171,7 @@ secondFunction();
 thirdFunction();
 fourthFunction();
 fifthFunction();
+sixthFunction();
+
 
 */
