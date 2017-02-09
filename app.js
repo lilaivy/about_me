@@ -86,19 +86,22 @@
 
 
 
-/*
- var question5 = prompt("Once won a large sum of cash in a fierce game of BINGO.","Yes or No").toLowerCase();
- if (question5 === 'yes' || question5 === 'y') {
-   alert("Damn straight!");
-   console.log('User answer to question 5: ' + question5);
-   correct += 1;
- }
- else {
-   alert("She suuuure did!");
-   console.log('User answer to question 5: ' + question5);
-   correct += 1;           //Is it possibile to alert with an image?
+ function fifthFunction() {
+   var question5 = prompt('Once won a large sum of cash in a fierce game of BINGO.', 'Yes or No').toLowerCase();
+   if (question5 === 'yes' || question5 === 'y') {
+     alert('Damn straight!');
+     console.log('User answer to question 5: ' + question5);
+     correct += 1;
+   } else {
+     alert('She suuuure did!');
+     console.log('User answer to question 5: ' + question5);
+     correct += 1;           //Is it possibile to alert with an image?
+   }
  }
 
+
+
+/*
  //congratulate user and initiate stage 2 of game
  confirm("CONGRATULATIONS! You're learning the A-Z's of Ivy. Click OK to up the anty!");
  confirm("You're almost Ivy's BFF...just answer a few more questions correctly and you will live happily ever after!");
@@ -170,5 +173,6 @@ firstFunction();
 secondFunction();
 thirdFunction();
 fourthFunction();
+fifthFunction();
 
 */
