@@ -1,11 +1,13 @@
 body{
     font-family: Helvetica;
     text-align: center;
+    
 }
 
 h1{
     color: #e06c40;
     font-size: 48px;
+    padding-bottom: 0;
 }
 
 h2{
@@ -17,14 +19,21 @@ h2{
 }
 
 
-ol{
-    text-align: center;     
-    display: inline-block 
+ol{  
+    text-align: left;   
+    display: inline-block;
+    padding-left: 10%;
+    padding-bottom: 0;
+    
 }
 
 img {
     display: block;
     margin: 0 auto;
+    padding: 0;
+}
+
+
 }
 
 /* add an li section, figure out how to center the items in an ordered list*/
