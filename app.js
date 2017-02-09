@@ -24,7 +24,7 @@
 
  if (question1 === 'yes' || question1 === 'y') {
    alert('Indeed!  Ivy has mounting evidence that all humans are either "cilantro sluts" or "soap tasters".');
-   correct=+1;
+   correct += 1;
    console.log('User answer to question 1: ' + question1);
    console.log(correct);
  }
@@ -44,7 +44,7 @@
  else {
    alert("It wasn't Nepal, it was Belieze.  And I wasn't treking with Sherpas, I was farming with Mayans.  The unannounced part was right, though!");
    console.log('User answer to question 2: ' + question2);
-   correct=+1
+   correct += 1
    console.log(correct);
  }
 
@@ -52,7 +52,7 @@
  var question3 = prompt('Once complimented Beck, unknowingly, on his "Dope shoestrings!".',"Yes or No").toLowerCase();
  if (question3 === 'yes' || question3 === 'y') {
    alert("Tragically, this is a fact.");
-   correct=+1
+   correct += 1
    console.log('User answer to question 3: ' + question3);
    
  }
@@ -65,24 +65,24 @@
  if (question4 === 'yes' || question4 === 'y') {
    alert("It's mostly true.  I had to return to NYC to tie up some loose ends first.");
    console.log('User answer to question 4: ' + question4);
-   correct=+ 1;
+   correct += 1;
  }
  else {
    alert("Sort of. I had to return to NYC to tie up some loose ends first.");
    console.log('User answer to question 4: ' + question4);
-  correct=+ 1;
+  correct += 1;
  }
 
  var question5 = prompt("Once won a large sum of cash in a fierce game of BINGO.","Yes or No").toLowerCase();
  if (question5 === 'yes' || question5 === 'y') {
    alert("Damn straight!");
    console.log('User answer to question 5: ' + question5);
-   correct=+ 1;
+   correct += 1;
  }
  else {
    alert("She suuuure did!");
    console.log('User answer to question 5: ' + question5);
-   correct=+ 1;           //Is it possibile to alert with an image?
+   correct += 1;           //Is it possibile to alert with an image?
  }
 
  //congratulate user and initiate stage 2 of game
@@ -127,16 +127,15 @@
      if(question7 === bingoNumbers[i]){  //compares answer to each element of array
        alert('BINGO! You got it!');
        console.log('User answer to question 7: ' + question7);
-       correct = +1;
+       correct += 1;
        count = 8;   //breaks the while loop
        break;       //breaks the for loop
      }
-   };
-   if(question7 === 'b12'){
+   }
+   if (question7 === 'b12') {
      alert('Nice cheat, hot shot.  Try again!');
      console.log('User answer to question 7: ' + question7);
-   }
-   else{
+   } else{
      alert('No dice! Keep guessing!');
      console.log('User answer to 7: ' + question7);
 
@@ -147,8 +146,7 @@
  if(correct < 4){   //Anounce user score
    alert(userName + ', you need to up your Ivy knowledge. You got ' + correct + ' out of 7 correct!');
    console.log(correct);
- }
- else{
+ } else{
    alert(userName + ', you got ' + correct + ' out of 7 correct. You are a bonefide Ivy expert!');
    console.log(correct);
  }
