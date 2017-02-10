@@ -125,53 +125,51 @@
    alert('Let\'s move on to the final question!');
  }
 
-/*
- var bingoNumbers = ['o44', 'i19', 'n31', 'g43'];
- 
- 
+
+ function seventhFunction() {
+   var bingoNumbers = ['o44', 'i19', 'n31', 'g43'];
+
  //THE REASON THE CODE BELOW WORKED IS BECAUSE YOU RESET THE SAME COUNT VARIABLE AS ABOVE. BUUUUT WE JUST WRAPPED IT INTO A FUNCTION AND MADE IT LOCAL TO THE FUNCTIONS SO THIS WON'T HAPPEN AGAIN
- count = 0;
+   var countTwo = 0;
 
- while(count < 6){
-   count++;
-   var question7 = prompt('Can you guess one of the five numbers called that won Ivy her Bingo crown? (HINT:One of them was B12)').toLowerCase();
+   while(countTwo < 6){
+     countTwo++;
+     var question7 = prompt('Can you guess one of the five numbers called that won Ivy her Bingo crown? (HINT:One of them was B12)').toLowerCase();
 
-   for(var i = 0; i < bingoNumbers.length; i++) {  //Job of this for loop is to run through the answers in the array to see if correct.
+     for (var i = 0; i < bingoNumbers.length; i++) {  //Job of this for loop is to run through the answers in the array to see if correct.
 
-     if(question7 === bingoNumbers[i]){  //compares answer to each element of array
-       alert('BINGO! You got it!');
+       if (question7 === bingoNumbers[i]) {  //compares answer to each element of array
+         alert('BINGO! You got it!');
+         console.log('User answer to question 7: ' + question7);
+         correct += 1;
+         countTwo = 8;   //breaks the while loop
+         break;       //breaks the for loop
+       }
+     }
+     if (question7 === 'b12') {
+       alert('Nice cheat, hot shot.  Try again!');
        console.log('User answer to question 7: ' + question7);
-       correct += 1;
-       count = 8;   //breaks the while loop
-       break;       //breaks the for loop
+     } else {
+       alert('No dice! Keep guessing!');
+       console.log('User answer to 7: ' + question7);
+
      }
    }
-   if (question7 === 'b12') {
-     alert('Nice cheat, hot shot.  Try again!');
-     console.log('User answer to question 7: ' + question7);
-   } else{
-     alert('No dice! Keep guessing!');
-     console.log('User answer to 7: ' + question7);
+   alert('Ok, so Bingo is not your game.  Click OK to see how well you know Ivy'); //end user guesses
 
+   if (correct < 4) {   //Anounce user score
+     alert(userName + ', you need to up your Ivy knowledge. You got ' + correct + ' out of 7 correct!');
+     console.log(correct);
+   } else {
+     alert(userName + ', you got ' + correct + ' out of 7 correct. You are a bonefide Ivy expert!');
+     console.log(correct);
    }
  }
- alert("Ok, so Bingo is not your game.  Click OK to see how well you know Ivy"); //end user guesses
 
- if(correct < 4){   //Anounce user score
-   alert(userName + ', you need to up your Ivy knowledge. You got ' + correct + ' out of 7 correct!');
-   console.log(correct);
- } else{
-   alert(userName + ', you got ' + correct + ' out of 7 correct. You are a bonefide Ivy expert!');
-   console.log(correct);
- }
-
-
-firstFunction();
-secondFunction();
-thirdFunction();
-fourthFunction();
-fifthFunction();
-sixthFunction();
-
-
-*/
+ firstFunction();
+ secondFunction();
+ thirdFunction();
+ fourthFunction();
+ fifthFunction();
+ sixthFunction();
+ seventhFunction();
