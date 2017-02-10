@@ -1,14 +1,14 @@
  'use strict';
 
  var correct = 0;// indert correct = + 1 to count the correct answers
- var userName = prompt ("Hey There!  What's your name, huckleberry?");
+ var userName = prompt ('Hey There!  What\'s your name, huckleberry?');
  console.log('User name:' + userName);
 
-/*
- var wannaPlay = prompt("So you think you know me?", "Yes or No").toLowerCase();
+
+ var wannaPlay = prompt('So you think you know me?', 'Yes or No').toLowerCase();
 
  if (wannaPlay === 'yes' || wannaPlay === 'y') {  //ask user to play the game
-   confirm("Prove it!");
+   confirm('Prove it!');
    console.log('User answer to game invite: ' + wannaPlay);
  } else {
    confirm("Play this game to learn some fun Ivy facts!");
@@ -17,9 +17,10 @@
 
 //Provide instructions for quiz
  confirm('For each of the following five questions, ask yourself: Is it true that Ivy . . .');  //<i>this text in CSS
-*/
+
 
  function firstFunction() {
+
    var question1 = prompt('Has a theory that cilantro is the most polarizing of foods?', 'Yes or No').toLowerCase();
 
    if (question1 === 'yes' || question1 === 'y') {
@@ -102,8 +103,9 @@
    var count = 0;
 
    while (count < 4 && question6 != bingoMoney) {
+//while loop will end once count reads 4 or when question 6  = bigoMoney
   //figure out how to convert a string into a number and change to === instead of ==
-     var question6 = prompt('How much cash money did Ivy walk with in this epic game of Bingo');
+     var question6 = prompt('How much cash money did Ivy walk with in this epic game of Bingo? You have 4 guesses...GO!');
      count++;
 
      //guessed right
@@ -122,7 +124,7 @@
        //out of guesses
      }
    }
-   alert('Let\'s move on to the final question!');
+   alert('Got one more answer in ya? Let\'s move on to the final question!');
  }
 
 
@@ -130,10 +132,10 @@
    var bingoNumbers = ['o44', 'i19', 'n31', 'g43'];
 
  //THE REASON THE CODE BELOW WORKED IS BECAUSE YOU RESET THE SAME COUNT VARIABLE AS ABOVE. BUUUUT WE JUST WRAPPED IT INTO A FUNCTION AND MADE IT LOCAL TO THE FUNCTIONS SO THIS WON'T HAPPEN AGAIN
-   var countTwo = 0;
+   var count = 0;
 
-   while(countTwo < 6){
-     countTwo++;
+   while(count < 6){
+     count++;
      var question7 = prompt('Can you guess one of the five numbers called that won Ivy her Bingo crown? (HINT:One of them was B12)').toLowerCase();
 
      for (var i = 0; i < bingoNumbers.length; i++) {  //Job of this for loop is to run through the answers in the array to see if correct.
@@ -142,7 +144,7 @@
          alert('BINGO! You got it!');
          console.log('User answer to question 7: ' + question7);
          correct += 1;
-         countTwo = 8;   //breaks the while loop
+         count = 8;   //breaks the while loop
          break;       //breaks the for loop
        }
      }
@@ -155,7 +157,7 @@
 
      }
    }
-   alert('Ok, so Bingo is not your game.  Click OK to see how well you know Ivy'); //end user guesses
+   alert('Thanks for playing!  Click OK to see how well you know Ivy'); //end user game
 
    if (correct < 4) {   //Anounce user score
      alert(userName + ', you need to up your Ivy knowledge. You got ' + correct + ' out of 7 correct!');

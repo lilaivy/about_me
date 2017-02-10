@@ -5,26 +5,41 @@ body{
 }
 
 h1{
-    color: #e06c40;
+    color:rgb(195, 85, 57);
     font-size: 48px;
     padding-bottom: 0;
 }
 
 h2{
     padding-top: 25px;
-    color:#e06c40;
+    color:rgb(195, 85, 57);
     font-size: 35px;
     padding-left: 18px;
     
 }
 
+.bio {
+    padding:0;
+}
+
+.total{
+    position:relative;
+    bottom:10px;
+}
+
+.topTen{
+    position: relative;
+        bottom: 25px;
+}
 
 ol{  
     text-align: left;   
     display: inline-block;
     padding-left: 10%;
     padding-bottom: 0;
-    
+    position: relative; 
+        bottom: 20px;
+        left:10px; 
 }
 
 img {
@@ -32,8 +47,16 @@ img {
     margin: 0 auto;
     padding: 0;
 }
+.link{
+color:rgb(195, 85, 57);
+text-decoration: none;
+}
 
+.album{
+color: rgb(195, 85, 57);   
+text-decoration: none;
 
 }
 
-/* add an li section, figure out how to center the items in an ordered list*/
+
+
