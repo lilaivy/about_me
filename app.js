@@ -1,5 +1,7 @@
  'use strict';
 
+ var answerKey = [];
+
  var correct = 0;// indert correct = + 1 to count the correct answers
  var userName = prompt ('Hey There!  What\'s your name, huckleberry?');
  console.log('User name:' + userName);
@@ -33,7 +35,9 @@
      console.log('User answer to question 1: ' + question1);
      console.log(correct);
    }
+   answerKey.push(question1);
  }
+
 
 //start game
 
@@ -51,6 +55,7 @@
      correct += 1;
      console.log(correct);
    }
+   answerKey.push(question2);
  }
 
 
@@ -64,6 +69,7 @@
      alert('Nothing would make Ivy happier than if this were not true.');
      console.log('User answer to question 3: ' + question3);
    }
+   answerKey.push(question3);
  }
 
  function fourthFunction() {
@@ -78,6 +84,7 @@
      console.log('User answer to question 4: ' + question4);
      correct += 1;
    }
+   answerKey.push(question4);
  }
 
  function fifthFunction() {
@@ -91,6 +98,7 @@
      console.log('User answer to question 5: ' + question5);
      correct += 1;           //Is it possibile to alert with an image?
    }
+   answerKey.push(question5);
  }
 
  //congratulate user and initiate stage 2 of game
@@ -175,3 +183,10 @@
  fifthFunction();
  sixthFunction();
  seventhFunction();
+
+
+var answerlist = document.querySelectorAll("li");           //worked on this with Chris
+for (var i = 0; i < answerlist.length; i++){
+ answerlist[i].textContent = answerlist[i].textContent + answerKey[i];
+
+};
